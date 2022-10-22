@@ -1,3 +1,5 @@
+# transformation
+
 from pyspark import SparkContext
 sc = SparkContext.getOrCreate()
 rdd = sc.parallelize([1,2,6,5,3,5,8,9])
