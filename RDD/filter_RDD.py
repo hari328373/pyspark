@@ -5,7 +5,7 @@ sc=SparkContext.getOrCreate()
 def statswith(w):
     return w.startswith("s")
 
-#filter
+#filter--->transformation
 my_coll ="string is a data structure in python".split(' ')
 words = sc.parallelize(my_coll)
 filterwords = words.filter(lambda w:statswith(w))
