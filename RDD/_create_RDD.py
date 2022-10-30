@@ -2,7 +2,6 @@
 
 from pyspark import SparkContext,SparkConf
 
-
 conf = SparkConf().setAppName("rdd").setMaster("local[*]") # configure the spark
 sc = SparkContext(conf=conf)  # initialize the spark
 inputwords = ["spark","hadoop","hive","pig","mahoot","sql"]
