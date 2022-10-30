@@ -12,7 +12,7 @@ filterwords = words.filter(lambda w:statswith(w))
 print(filterwords.collect())
 
 # filter
-x_rdd = sc.parallelize([1,2,3,4,5])
+x_rdd = sc.parallelize([1,2,3,4,5,6,7,8])
 y_rdd= x_rdd.filter(lambda x:x%2==0)
-print(x_rdd.collect())
-print(y_rdd.collect())
+print("x_rdd:",x_rdd.collect())
+print("y_rdd",y_rdd.collect())
