@@ -10,3 +10,4 @@ def table_1(spark):
 
 t1= table_1(spark)
 t1.show(truncate=False)
+t1.printSchema()
